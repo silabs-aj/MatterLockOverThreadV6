@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/CMakeFiles/MatterLockOverThread-base"
+		},
+		{
+			"file" : "C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/CMakeFiles/MatterLockOverThread-(CONFIG).rule"
+		},
+		{
+			"file" : "C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/CMakeFiles/(CONFIG)/MatterLockOverThread-complete.rule"
+		},
+		{
+			"file" : "C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/MatterLockOverThread-prefix/src/MatterLockOverThread-stamp/(CONFIG)/MatterLockOverThread-build.rule"
+		},
+		{
+			"file" : "C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/MatterLockOverThread-prefix/src/MatterLockOverThread-stamp/(CONFIG)/MatterLockOverThread-configure.rule"
+		},
+		{
+			"file" : "C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/MatterLockOverThread-prefix/src/MatterLockOverThread-stamp/(CONFIG)/MatterLockOverThread-download.rule"
+		},
+		{
+			"file" : "C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/MatterLockOverThread-prefix/src/MatterLockOverThread-stamp/(CONFIG)/MatterLockOverThread-install.rule"
+		},
+		{
+			"file" : "C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/MatterLockOverThread-prefix/src/MatterLockOverThread-stamp/(CONFIG)/MatterLockOverThread-mkdir.rule"
+		},
+		{
+			"file" : "C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/MatterLockOverThread-prefix/src/MatterLockOverThread-stamp/(CONFIG)/MatterLockOverThread-patch.rule"
+		},
+		{
+			"file" : "C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/MatterLockOverThread-prefix/src/MatterLockOverThread-stamp/(CONFIG)/MatterLockOverThread-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"MatterLockOverThread"
+		],
+		"name" : "MatterLockOverThread"
+	}
+}

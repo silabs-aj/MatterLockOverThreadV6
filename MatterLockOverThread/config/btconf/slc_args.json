@@ -1,0 +1,6 @@
+{
+  "sdkRoot" : "C:/Users/alji/.silabs/slt/installs/conan/p/simpl1a11563c2e399/p/",
+  "apackRoot" : "C:\\Users\\alji\\.silabs\\slt\\installs\\conan\\p\\simpl1a11563c2e399\\p\\bluetooth_bgbuild",
+  "partOpn" : "efr32mg26b510f3200il136",
+  "boards" : "brd4118arevA03,brd4002arevA06"
+}

@@ -1,0 +1,5 @@
+C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/CMakeFiles/MatterLockOverThread.dir
+C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/CMakeFiles/Matter-Bootloader.dir
+C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/CMakeFiles/postbuild.dir
+C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/CMakeFiles/edit_cache.dir
+C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/CMakeFiles/rebuild_cache.dir

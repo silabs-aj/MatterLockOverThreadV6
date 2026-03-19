@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/CMakeFiles/Matter-Bootloader-base"
+		},
+		{
+			"file" : "C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/CMakeFiles/Matter-Bootloader-(CONFIG).rule"
+		},
+		{
+			"file" : "C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/CMakeFiles/(CONFIG)/Matter-Bootloader-complete.rule"
+		},
+		{
+			"file" : "C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/Matter-Bootloader-prefix/src/Matter-Bootloader-stamp/(CONFIG)/Matter-Bootloader-build.rule"
+		},
+		{
+			"file" : "C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/Matter-Bootloader-prefix/src/Matter-Bootloader-stamp/(CONFIG)/Matter-Bootloader-configure.rule"
+		},
+		{
+			"file" : "C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/Matter-Bootloader-prefix/src/Matter-Bootloader-stamp/(CONFIG)/Matter-Bootloader-download.rule"
+		},
+		{
+			"file" : "C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/Matter-Bootloader-prefix/src/Matter-Bootloader-stamp/(CONFIG)/Matter-Bootloader-install.rule"
+		},
+		{
+			"file" : "C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/Matter-Bootloader-prefix/src/Matter-Bootloader-stamp/(CONFIG)/Matter-Bootloader-mkdir.rule"
+		},
+		{
+			"file" : "C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/Matter-Bootloader-prefix/src/Matter-Bootloader-stamp/(CONFIG)/Matter-Bootloader-patch.rule"
+		},
+		{
+			"file" : "C:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake/build/Matter-Bootloader-prefix/src/Matter-Bootloader-stamp/(CONFIG)/Matter-Bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Matter-Bootloader"
+		],
+		"name" : "Matter-Bootloader"
+	}
+}
