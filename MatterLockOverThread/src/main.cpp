@@ -18,6 +18,8 @@
  */
 
 #include "sl_component_catalog.h"
+#include "sl_power_manager.h"
+#include "sl_power_manager_debug.h"
 // Use sl_system for projects upgraded to 2025.6, identified by the presence of SL_CATALOG_CUSTOM_MAIN_PRESENT
 #if defined(SL_CATALOG_CUSTOM_MAIN_PRESENT)
 #include "sl_system_init.h"
@@ -25,9 +27,47 @@
 #include "sl_main_init.h"
 #endif
 #include <MatterConfig.h>
+#include <lib/support/logging/CHIPLogging.h>
 #include <platform/silabs/tracing/SilabsTracingMacros.h>
 
 using TimeTraceOperation = chip::Tracing::Silabs::TimeTraceOperation;
+
+namespace {
+
+const char * EnergyModeToString(sl_power_manager_em_t em)
+{
+    switch (em)
+    {
+    case SL_POWER_MANAGER_EM0:
+        return "EM0";
+    case SL_POWER_MANAGER_EM1:
+        return "EM1";
+    case SL_POWER_MANAGER_EM2:
+        return "EM2";
+    case SL_POWER_MANAGER_EM3:
+        return "EM3";
+    case SL_POWER_MANAGER_EM4:
+        return "EM4";
+    default:
+        return "UNKNOWN";
+    }
+}
+
+void OnEnergyModeTransition(sl_power_manager_em_t from, sl_power_manager_em_t to)
+{
+    ChipLogProgress(DeviceLayer, "Power transition: %s -> %s", EnergyModeToString(from), EnergyModeToString(to));
+//    SILABS_LOG("Power transition: %s -> %s", EnergyModeToString(from), EnergyModeToString(to));
+    sl_power_manager_debug_print_em_requirements();
+}
+
+sl_power_manager_em_transition_event_handle_t sEnergyModeEventHandle;
+const sl_power_manager_em_transition_event_info_t sEnergyModeEventInfo = {
+    .event_mask = SL_POWER_MANAGER_EVENT_TRANSITION_ENTERING_EM2 | SL_POWER_MANAGER_EVENT_TRANSITION_LEAVING_EM2,
+    .on_event   = OnEnergyModeTransition,
+};
+
+} // namespace
+
 
 // This is a User definable function in sl_main context, called by sl_main_init before the kernel is started
 void app_init_early(void)
@@ -40,6 +80,7 @@ void app_init_early(void)
 // initialized.
 void app_init(void)
 {
+    sl_power_manager_subscribe_em_transition_event(&sEnergyModeEventHandle, &sEnergyModeEventInfo);
     SILABS_TRACE_END(chip::Tracing::Silabs::TimeTraceOperation::kSilabsInit);
     SILABS_TRACE_BEGIN(chip::Tracing::Silabs::TimeTraceOperation::kMatterInit);
     // Initialize the matter application. For example, create periodic timer(s) or

@@ -1,0 +1,47 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "MatterLockOverThreadSolution_silabs_debug:default_config_setup",
+            "type": "shell",
+            "command": "C:/Users/alji/.silabs/slt/installs/conan/p/cmakefa35ab0687064/p/bin/cmake.exe --preset project",
+            "options": {
+                "cwd": "c:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake"
+            }
+        },
+        {
+            "label": "MatterLockOverThreadSolution_silabs_debug:default_config_build",
+            "type": "shell",
+            "command": "C:/Users/alji/.silabs/slt/installs/conan/p/cmakefa35ab0687064/p/bin/cmake.exe --build --preset default_config",
+            "options": {
+                "cwd": "c:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThreadSolution_cmake"
+            }
+        },
+        {
+            "label": "MatterLockOverThreadSolution_silabs_debug:default_config_flash",
+            "type": "shell",
+            "command": "C:/Users/alji/.silabs/slt/installs/archive/Simplicity Commander/commander.exe",
+            "args": [
+                "flash",
+                "c:/workspace/v6_/MatterLockOverThreadSolution/artifact/MatterLockOverThreadSolution-full.s37",
+                "--halt",
+                "--serialno",
+                "440344055",
+                "--device",
+                "EFR32MG26B510F3200IL136"
+            ]
+        },
+        {
+            "label": "MatterLockOverThreadSolution_silabs_debug:default_config_combined",
+            "dependsOrder": "sequence",
+            "presentation": {
+                "reveal": "never"
+            },
+            "dependsOn": [
+                "MatterLockOverThreadSolution_silabs_debug:default_config_setup",
+                "MatterLockOverThreadSolution_silabs_debug:default_config_build",
+                "MatterLockOverThreadSolution_silabs_debug:default_config_flash"
+            ]
+        }
+    ]
+}

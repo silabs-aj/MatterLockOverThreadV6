@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "name": "MatterLockOverThreadSolution_silabs_debug:default_config",
+            "cwd": "${workspaceFolder}",
+            "type": "cortex-debug",
+            "request": "launch",
+            "serverpath": "C:\\Users\\alji\\.silabs\\slt\\installs\\archive\\exx32-v6.0.32\\JLinkGDBServerCL.exe",
+            "servertype": "jlink",
+            "gdbPath": "C:\\Users\\alji\\.silabs\\slt\\installs\\archive\\exx32-v6.0.32\\arm-none-eabi-gdb.exe",
+            "device": "EFR32MG26BxxxF3200",
+            "svdFile": "C:\\Users\\alji\\AppData\\Local\\Temp\\silabs_extension\\silabs_extension\\svd\\EFR32MG26B510F3200IL136.svd",
+            "runToEntryPoint": "main",
+            "rtos": "FreeRTOS",
+            "showDevDebugOutput": "raw",
+            "executable": "c:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThread/cmake_gcc/build/base/MatterLockOverThread.out",
+            "preLaunchTask": "MatterLockOverThreadSolution_silabs_debug:default_config_combined",
+            "serialNumber": "440344055",
+            "breakAfterReset": true,
+            "overrideLaunchCommands": [
+                "exec-file c:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThread/cmake_gcc/build/base/MatterLockOverThread.out",
+                "symbol-file c:/workspace/v6_/MatterLockOverThreadSolution/MatterLockOverThread/cmake_gcc/build/base/MatterLockOverThread.out",
+                "add-symbol-file c:/workspace/v6_/MatterLockOverThreadSolution/Matter-Bootloader/cmake_gcc/build/base/Matter-Bootloader.out"
+            ],
+            "overrideResetCommands": [
+                "monitor reset",
+                "set $pc = __Vectors[1]",
+                "set $sp = __Vectors[0]"
+            ]
+        }
+    ]
+}
